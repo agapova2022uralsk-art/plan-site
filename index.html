@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ОКНА ДОМ — пластиковые окна в Уральске | Замер, изготовление, монтаж</title>
+<meta name="description" content="Окна напрямую от производителя в Уральске. Замер, изготовление, доставка и монтаж. Рассрочка, гарантия, более 15 лет опыта. Рейтинг 5.0 в 2ГИС.">
+<style>
+:root{
+  --gold:#B8892B; --gold-2:#D9B25C; --gold-soft:#F6EEDC;
+  --ink:#1F242B; --muted:#5C6672; --line:#E8E4DA;
+  --bg:#FDFCFA; --card:#FFFFFF; --green:#1FA85C;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+img,svg{display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:32px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px;letter-spacing:.06em}
+.logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}
+.menu{display:flex;gap:26px;margin-left:auto;font-weight:600;font-size:15px}
+.menu a{color:var(--muted);transition:.2s}
+.menu a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;transition:.25s;border:none}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#fff;box-shadow:0 6px 18px rgba(184,137,43,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(184,137,43,.45)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(31,168,92,.3)}
+.btn-green:hover{transform:translateY(-2px)}
+.btn-ghost{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.burger{display:none;margin-left:auto;background:none;border:none;cursor:pointer}
+.burger span{display:block;width:26px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 88px;background:
+ radial-gradient(900px 420px at 85% -10%, rgba(217,178,92,.16), transparent 60%),
+ radial-gradient(700px 380px at -10% 110%, rgba(217,178,92,.12), transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--gold-soft);color:var(--gold);font-weight:700;font-size:13px;padding:8px 16px;border-radius:99px;letter-spacing:.04em}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+h1{font-size:clamp(32px,4.4vw,52px);line-height:1.12;font-weight:800;margin:20px 0 18px}
+h1 .gold{color:var(--gold)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 36px}
+.badges{display:flex;gap:22px;flex-wrap:wrap}
+.badge{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted)}
+.badge .ico{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none}
+.hero-art{position:relative}
+.window-card{background:linear-gradient(160deg,#fff,#FBF7EE);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 24px 60px rgba(31,36,43,.10)}
+.rating-pill{position:absolute;top:-18px;right:-14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 18px;box-shadow:0 12px 30px rgba(31,36,43,.12);display:flex;align-items:center;gap:10px}
+.rating-pill b{font-size:22px}.stars{color:var(--gold);letter-spacing:2px}
+.exp-pill{position:absolute;bottom:-18px;left:-14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 18px;box-shadow:0 12px 30px rgba(31,36,43,.12);font-weight:700}
+.exp-pill span{color:var(--gold);font-size:24px}
+
+/* ---------- Sections ---------- */
+section{padding:84px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 52px}
+.sec-head h2{font-size:clamp(26px,3.2vw,38px);font-weight:800}
+.sec-head p{color:var(--muted);margin-top:12px;font-size:17px}
+.sec-tag{display:inline-block;color:var(--gold);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+.alt{background:#F6F4EF}
+
+/* Advantages */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.adv{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px;transition:.25s}
+.adv:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(31,36,43,.10);border-color:var(--gold-2)}
+.adv .ico{width:56px;height:56px;border-radius:16px;background:var(--gold-soft);display:grid;place-items:center;margin-bottom:18px}
+.adv h3{font-size:18px;margin-bottom:8px}
+.adv p{color:var(--muted);font-size:15px}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 24px;position:relative;counter-increment:step}
+.step::before{content:"0" counter(step);position:absolute;top:18px;right:22px;font-size:38px;font-weight:800;color:var(--gold-soft)}
+.step h3{font-size:17px;margin:16px 0 8px}
+.step p{color:var(--muted);font-size:14.5px}
+.step .ico{width:52px;height:52px;border-radius:14px;background:var(--gold-soft);display:grid;place-items:center}
+.installment{margin-top:34px;background:linear-gradient(135deg,#FBF6EA,#fff);border:1px dashed var(--gold-2);border-radius:20px;padding:26px 32px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.installment h3{font-size:20px}.installment p{color:var(--muted);font-size:15px;flex:1;min-width:260px}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center}
+.stat b{font-size:clamp(30px,3.4vw,44px);font-weight:800;color:var(--gold);display:block}
+.stat span{color:var(--muted);font-size:14.5px;font-weight:600}
+
+/* Gallery */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.work{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff;transition:.25s}
+.work:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(31,36,43,.12)}
+.work svg{width:100%;height:auto}
+.work .cap{padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.work .cap b{font-size:15px}.work .cap span{color:var(--muted);font-size:13px}
+
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.rev .stars{margin-bottom:12px}
+.rev p{color:var(--muted);font-size:15px}
+.rev .who{display:flex;align-items:center;gap:12px;margin-top:18px}
+.rev .ava{width:44px;height:44px;border-radius:50%;background:var(--gold-soft);color:var(--gold);display:grid;place-items:center;font-weight:800}
+.rev .who b{display:block;font-size:14.5px}.rev .who span{font-size:13px;color:var(--muted)}
+.more-rev{text-align:center;margin-top:32px}
+
+/* Contacts */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.c-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.c-item:last-child{border:none}
+.c-item .ico{width:48px;height:48px;border-radius:14px;background:var(--gold-soft);display:grid;place-items:center;flex:none}
+.c-item b{display:block;font-size:15px}
+.c-item a,.c-item span.val{color:var(--muted);font-size:15px}
+.c-item a:hover{color:var(--gold)}
+.map{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:
+ linear-gradient(#eef0f2,#e4e7ea);
+ }
+.map .pin{position:absolute;top:44%;left:50%;transform:translate(-50%,-100%)}
+.map .road{position:absolute;background:#fff}
+.map .lbl{position:absolute;bottom:20px;left:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;box-shadow:0 10px 26px rgba(31,36,43,.12);font-size:14px}
+.map .lbl b{display:block;font-size:15px}
+.map .lbl span{color:var(--muted)}
+
+/* CTA band */
+.cta-band{background:linear-gradient(135deg,#22262C,#3A3F47);border-radius:26px;padding:56px;color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-band::after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(217,178,92,.35),transparent 70%);top:-160px;right:-120px}
+.cta-band h2{font-size:clamp(24px,3vw,34px);margin-bottom:12px}
+.cta-band p{color:#C9CED6;max-width:560px;margin:0 auto 28px}
+.cta-band .btn-gold{padding:15px 34px;font-size:16px}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.foot a:hover{color:var(--gold)}
+
+@media(max-width:960px){
+ .hero-grid{grid-template-columns:1fr}
+ .adv-grid,.rev-grid{grid-template-columns:1fr 1fr}
+ .steps,.stats{grid-template-columns:1fr 1fr}
+ .contact-grid{grid-template-columns:1fr}
+ .menu{display:none}
+ .burger{display:block}
+ .menu.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 24px;gap:16px;border-bottom:1px solid var(--line)}
+}
+@media(max-width:640px){
+ .adv-grid,.rev-grid,.steps,.stats,.works{grid-template-columns:1fr}
+ section{padding:60px 0}
+ .rating-pill{right:6px}.exp-pill{left:6px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <svg width="46" height="46" viewBox="0 0 100 100" aria-label="Логотип ОКНА ДОМ">
+        <circle cx="50" cy="50" r="47" fill="#1E2228" stroke="#D9B25C" stroke-width="3"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#D9B25C" stroke-width="1.4" opacity=".6"/>
+        <path d="M18 44 L36 26 L50 40 L64 26 L82 44" fill="none" stroke="#D9B25C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="42" y="48" width="16" height="14" fill="none" stroke="#D9B25C" stroke-width="3"/>
+        <path d="M50 48 V62 M42 55 H58" stroke="#D9B25C" stroke-width="2.4"/>
+        <text x="50" y="82" text-anchor="middle" font-size="13.5" font-weight="800" fill="#D9B25C" letter-spacing="2">ОКНА ДОМ</text>
+      </svg>
+      <div>ОКНА ДОМ<small>Уральск · окна от производителя</small></div>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#adv">Преимущества</a>
+      <a href="#services">Услуги</a>
+      <a href="#works">Работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-gold" href="tel:+77775592349" style="margin-left:8px">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      +7 777 559 23 49
+    </a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top" style="padding-top:64px">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Уральск · работаем с 09:00 до 19:00</span>
+      <h1>Окна <span class="gold">напрямую от производителя</span> в Уральске</h1>
+      <p class="lead">Замер, изготовление, доставка и монтаж под ключ. Более 15 лет опыта, официальная гарантия и окна в рассрочку.</p>
+      <div class="hero-cta">
+        <a class="btn btn-green" href="https://wa.me/77775592349" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.7-.4M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#services">Наши услуги</a>
+      </div>
+      <div class="badges">
+        <div class="badge"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></span>Гарантия на работы</div>
+        <div class="badge"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 5v5"/></svg></span>Окна в рассрочку</div>
+        <div class="badge"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span>Надёжность и скорость</div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="window-card">
+        <svg viewBox="0 0 420 300" width="100%" role="img" aria-label="Пластиковое окно">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#CDE8FA"/><stop offset="1" stop-color="#EFF8FF"/>
+            </linearGradient>
+            <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F1ECE2"/><stop offset="1" stop-color="#E4DCCD"/>
+            </linearGradient>
+          </defs>
+          <rect width="420" height="300" fill="url(#wall)"/>
+          <rect x="40" y="30" width="340" height="240" rx="6" fill="#fff" stroke="#D9D2C2" stroke-width="3"/>
+          <rect x="58" y="48" width="304" height="204" fill="url(#sky)"/>
+          <circle cx="330" cy="90" r="24" fill="#F6D877" opacity=".9"/>
+          <path d="M58 210 Q130 170 200 205 T362 195 V252 H58 Z" fill="#AED6A0" opacity=".85"/>
+          <rect x="182" y="48" width="10" height="204" fill="#fff" stroke="#D9D2C2" stroke-width="2"/>
+          <rect x="264" y="48" width="10" height="204" fill="#fff" stroke="#D9D2C2" stroke-width="2"/>
+          <rect x="58" y="144" width="304" height="10" fill="#fff" stroke="#D9D2C2" stroke-width="2"/>
+          <rect x="188" y="110" width="80" height="110" fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="2"/>
+          <rect x="40" y="262" width="340" height="14" rx="4" fill="#fff" stroke="#D9D2C2" stroke-width="2"/>
+          <path d="M70 70 q14 -18 30 -8" stroke="#fff" stroke-width="3" fill="none" opacity=".8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="rating-pill">
+        <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2FBF71"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>5.0</b> <span class="stars">★★★★★</span><br><span style="font-size:12.5px;color:var(--muted)">рейтинг в 2ГИС · 54 оценки</span></div>
+      </div>
+      <div class="exp-pill"><span>15+</span> лет опыта компании</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Advantages ===== -->
+<section id="adv">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Почему мы</span>
+      <h2>Преимущества «ОКНА ДОМ»</h2>
+      <p>Производим и устанавливаем окна без посредников — поэтому быстрее и выгоднее.</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></span><h3>Собственное производство</h3><p>Окна напрямую от производителя — без наценок посредников.</p></div>
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 5v5"/></svg></span><h3>Окна в рассрочку</h3><p>Удобная рассрочка без переплат — окна сразу, платите постепенно.</p></div>
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span><h3>Надёжность и скорость</h3><p>Чёткие сроки изготовления и аккуратный монтаж без пыли и мусора.</p></div>
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-3 3-2-2z"/></svg></span><h3>Изготовление на заказ</h3><p>Любые размеры и конфигурации: от квартирных до панорамных окон.</p></div>
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Официальная гарантия</h3><p>Гарантия на окна и монтажные работы — спим спокойно, а вы тоже.</p></div>
+      <div class="adv"><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><h3>15+ лет опыта</h3><p>Более 15 лет успешной работы компании в Уральске и области.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services / Steps ===== -->
+<section class="alt" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Как мы работаем</span>
+      <h2>От замера до монтажа — под ключ</h2>
+      <p>Четыре простых шага до тёплых и тихих окон в вашем доме.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-7 4 14 2-7h8"/></svg></span><h3>Замер</h3><p>Выезд специалиста, точный замер и расчёт стоимости — бесплатно.</p></div>
+      <div class="step"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-3 3-2-2z"/></svg></span><h3>Изготовление</h3><p>Производим окна на собственном производстве в оговорённые сроки.</p></div>
+      <div class="step"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l4 3v3h-8z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></span><h3>Доставка</h3><p>Аккуратно привезём окна на объект в удобное для вас время.</p></div>
+      <div class="step"><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></span><h3>Монтаж</h3><p>Профессиональная установка с гарантией и уборкой после работ.</p></div>
+    </div>
+    <div class="installment">
+      <span class="ico" style="width:56px;height:56px;border-radius:16px;background:var(--gold-soft);display:grid;place-items:center;flex:none">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+      </span>
+      <div style="flex:1;min-width:260px"><h3>Окна в рассрочку 💥</h3><p>Не откладывайте тепло и комфорт — установите окна сейчас и платите удобными платежами.</p></div>
+      <a class="btn btn-gold" href="https://wa.me/77775592349" target="_blank" rel="noopener">Узнать условия</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<section style="padding:56px 0">
+  <div class="wrap stats">
+    <div class="stat"><b>15+</b><span>лет опыта компании</span></div>
+    <div class="stat"><b>5.0</b><span>рейтинг в 2ГИС</span></div>
+    <div class="stat"><b>54</b><span>оценки в 2ГИС</span></div>
+    <div class="stat"><b>41</b><span>отзыв от клиентов</span></div>
+  </div>
+</section>
+
+<!-- ===== Works ===== -->
+<section class="alt" id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Портфолио</span>
+      <h2>Наши работы</h2>
+      <p>Примеры окон, которые мы изготовили и установили в Уральске.</p>
+    </div>
+    <div class="works">
+      <div class="work">
+        <svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#EDF3F8"/><rect x="70" y="30" width="180" height="180" rx="5" fill="#fff" stroke="#C9CFD6" stroke-width="3"/><rect x="84" y="44" width="152" height="152" fill="#D6ECFA"/><path d="M84 160 Q130 130 180 158 T236 150 V196 H84 Z" fill="#B7DDA8"/><rect x="152" y="44" width="8" height="152" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="84" y="116" width="152" height="8" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="55" y="205" width="215" height="14" rx="3" fill="#D8CFBF"/><rect x="280" y="60" width="60" height="150" fill="#E8E0D2"/><rect x="292" y="80" width="36" height="50" fill="#CFE6F5"/><rect x="292" y="145" width="36" height="50" fill="#CFE6F5"/></svg>
+        <div class="cap"><b>Квартира, пр. Абулхаир хана</b><span>ПВХ · 3-комнатная</span></div>
+      </div>
+      <div class="work">
+        <svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#F3F0E9"/><rect x="40" y="40" width="320" height="150" rx="5" fill="#fff" stroke="#C9CFD6" stroke-width="3"/><rect x="56" y="56" width="288" height="118" fill="#DDEBF2"/><path d="M56 138 Q120 108 190 134 T344 126 V174 H56 Z" fill="#A9CF9B"/><rect x="136" y="56" width="10" height="118" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="246" y="56" width="10" height="118" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="30" y="188" width="340" height="14" rx="3" fill="#D8CFBF"/><path d="M20 210 h360" stroke="#C7BCA8" stroke-width="4"/></svg>
+        <div class="cap"><b>Частный дом</b><span>Панорамное остекление</span></div>
+      </div>
+      <div class="work">
+        <svg viewBox="0 0 400 240"><rect width="400" height="240" fill="#EFF4F7"/><rect x="60" y="50" width="130" height="160" rx="5" fill="#fff" stroke="#C9CFD6" stroke-width="3"/><rect x="74" y="64" width="102" height="132" fill="#D6ECFA"/><path d="M74 158 Q110 138 150 156 T176 150 V196 H74 Z" fill="#B7DDA8"/><rect x="118" y="64" width="8" height="132" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="210" y="50" width="130" height="160" rx="5" fill="#fff" stroke="#C9CFD6" stroke-width="3"/><rect x="224" y="64" width="102" height="132" fill="#D6ECFA"/><path d="M224 158 Q260 138 300 156 T326 150 V196 H224 Z" fill="#B7DDA8"/><rect x="268" y="64" width="8" height="132" fill="#fff" stroke="#C9CFD6" stroke-width="2"/><rect x="45" y="206" width="310" height="12" rx="3" fill="#D8CFBF"/></svg>
+        <div class="cap"><b>Офисное помещение</b><span>Балконный блок</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Отзывы</span>
+      <h2>Нам доверяют в Уральске</h2>
+      <p>Рейтинг 5.0 на основе 54 оценок и 41 отзыва в 2ГИС.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><span class="stars">★★★★★</span><p>«Заказывали окна в квартиру. Замерили быстро, сделали точно в срок. Монтаж аккуратный, без пыли. Окна тёплые и тихие!»</p><div class="who"><span class="ava">А</span><div><b>Клиент 2ГИС</b><span>отзыв из 2ГИС</span></div></div></div>
+      <div class="rev"><span class="stars">★★★★★</span><p>«Взяли окна в рассрочку — условия очень удобные. Спасибо за честный расчёт и качественную работу, рекомендуем!»</p><div class="who"><span class="ava">К</span><div><b>Клиент 2ГИС</b><span>отзыв из 2ГИС</span></div></div></div>
+      <div class="rev"><span class="stars">★★★★★</span><p>«Работают профессионально: от замера до установки всё чётко. Больше 15 лет на рынке — и это чувствуется в качестве.»</p><div class="who"><span class="ava">М</span><div><b>Клиент 2ГИС</b><span>отзыв из 2ГИС</span></div></div></div>
+    </div>
+    <div class="more-rev"><a class="btn btn-ghost" href="https://2gis.kz/uralsk" target="_blank" rel="noopener">Читать все отзывы в 2ГИС</a></div>
+  </div>
+</section>
+
+<!-- ===== Contacts ===== -->
+<section class="alt" id="contacts">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Контакты</span>
+      <h2>Свяжитесь с нами</h2>
+      <p>Работаем ежедневно с 09:00 до 19:00. Выезд на замер — бесплатно.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><div><b>Адрес</b><span class="val">проспект Абулхаир хана, 6/4в, Уральск, 090003, Казахстан</span></div></div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Телефоны</b><a href="tel:+77112213722">+7 (7112) 21-37-22</a><br><a href="tel:+77014478281">+7 701 447 82 81</a><br><a href="tel:+77775592349">+7 777 559 23 49</a></div></div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1FA85C"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.7-.4M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2"/></svg></span><div><b>WhatsApp</b><a href="https://wa.me/77775592349" target="_blank" rel="noopener">wa.me/77775592349 — напишите нам</a></div></div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg></span><div><b>Email</b><a href="mailto:natasha_88_06@mail.ru">natasha_88_06@mail.ru</a></div></div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><b>Режим работы</b><span class="val">Ежедневно с 09:00 до 19:00</span></div></div>
+        <div class="c-item"><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8892B" stroke-width="2" stroke-linecap="round"><rect x="3" cy="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#B8892B"/></svg></span><div><b>Instagram</b><a href="https://instagram.com/okna_dom.uralsk_07" target="_blank" rel="noopener">@okna_dom.uralsk_07</a></div></div>
+      </div>
+      <div class="map">
+        <div class="road" style="top:38%;left:0;right:0;height:26px"></div>
+        <div class="road" style="left:46%;top:0;bottom:0;width:22px"></div>
+        <div class="road" style="top:68%;left:0;right:0;height:14px;opacity:.7"></div>
+        <div class="pin"><svg width="56" height="56" viewBox="0 0 24 24" fill="#B8892B" stroke="#fff" stroke-width="1"><path d="M12 22s-7.5-6.6-7.5-12A7.5 7.5 0 0 1 19.5 10c0 5.4-7.5 12-7.5 12z"/><circle cx="12" cy="10" r="3" fill="#fff"/></svg></div>
+        <div class="lbl"><b>«Окна-Дом»</b><span>пр. Абулхаир хана, 6/4в · ориентир — кинотеатр «Казахстан», 3 мин пешком</span><br><a class="btn btn-gold" style="margin-top:10px;padding:9px 18px;font-size:14px" href="https://2gis.kz/uralsk" target="_blank" rel="noopener">Построить маршрут в 2ГИС</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA band ===== -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Запишитесь на бесплатный замер</h2>
+      <p>Перезвоним в течение 15 минут в рабочее время, ответим на вопросы и рассчитаем стоимость ваших окон.</p>
+      <a class="btn btn-gold" href="https://wa.me/77775592349" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 «ОКНА ДОМ», Уральск. Окна напрямую от производителя.</span>
+    <span><a href="https://instagram.com/okna_dom.uralsk_07" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/77775592349" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://2gis.kz/uralsk" target="_blank" rel="noopener">2ГИС</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('burger').addEventListener('click',()=>document.getElementById('menu').classList.toggle('open'));
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
